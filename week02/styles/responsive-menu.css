@@ -3,120 +3,112 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
-	font-family: Roboto, sans-serif;
-}
 
 h1 {
-	font-size: 1rem;
-	padding: 1rem;
-	background-color: #000;
-	color: #fff;
-	text-align: center;
+	text-align: left;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
 }
 
-p {
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: left;
 	margin: 1rem;
-	border: 1px solid rgb(0 0 0 /0.1);
-	padding: 0.5rem;
-	background-color: #eee;
-}
-
-/* ============ HAMBURGER BUTTON ============ */
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-}
-
-.hamburger span {
-    width: 28px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-    display: block;
-}
-
-/* Mobile View ***************/
-#menu {
-	display: block;
-	font-size: 2rem;
-	font-weight: 700;
-	text-decoration: none;
-	padding: 0.5rem 0.75rem;
-	background-color: #eee;
-	color: #000;
-}
-
-#menu::before {
-	content: "≡";
 }
 
 nav {
-	background-color: #ace;
+	max-width: 700px;
+	margin: 1rem auto;
 }
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
 .navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+	background-color: #333;
+	color: #fff;
 }
 
-.navigation li {
-	display: none;
-}
 .navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
+	display: none;
+	padding: 1rem;
+	text-align: center;
 	text-decoration: none;
-	color: black;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
 	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover,
-.navigation a:active {
-	color: white;
-	background-color: black;
-}
-
-.show li {
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
 	display: block;
 }
 
-#menu.show::before {
-	content: "X";
+.active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
-/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+.stuff {
+	margin: 0.5rem;
+	border: 1px solid rgb(0  0  0 / 0.1);
+	background-color: #bed;
+	max-width: 580px;
+	height: 100vh;
+}
 
-In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
-*/
-@media only screen and (min-width: 40em) {
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
 	h1 {
-		font-size: 2rem;
-	}
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; /* change state in small view */
-		flex: 1 1 100%;
-	}
-	.navigation a {
+		font-size: 2.5rem;
+		margin-left: 0;
 		text-align: center;
 	}
+
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
 	#menu {
-		display: none;
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.stuff {
+		margin: 1rem auto;
 	}
 }
