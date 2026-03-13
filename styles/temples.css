@@ -181,7 +181,7 @@ main h1 {
 
 /* ============ FOOTER ============ */
 footer {
-    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    background: #2d3748;
     color: white;
     text-align: center;
     padding: 2rem 1rem;
