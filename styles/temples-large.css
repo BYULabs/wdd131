@@ -61,10 +61,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
-
-    .gallery-item img {
-        height: 300px;
-    }
 }
 
 /* ============ EXTRA LARGE SCREEN STYLES (1024px and up) ============ */
@@ -73,10 +69,6 @@
     .gallery {
         grid-template-columns: repeat(3, 1fr);
         gap: 2.5rem;
-    }
-
-    .gallery-item img {
-        height: 280px;
     }
 
     header {
