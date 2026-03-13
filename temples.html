@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Sebastián Iturralde</title>
+    <meta name="description" content="A collection of photos of temples around the world.">
+    <meta name="author" content="Sebastián Iturralde">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="gallery">
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Salt_Lake_Temple%2C_Utah_-_Sept_2004-2.jpg" alt="Salt Lake Utah Temple">
+                <figcaption>Salt Lake Utah Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/2019_San_Diego_LDS_Temple_1.jpg" alt="San Diego California Temple">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Washington_D.C._Temple_At_Dusk.jpg" alt="Washington D.C Temple.">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/LDS_Laie_Hawaii_Temple_front_view.jpg" alt="Laie Hawaii Temple">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Cardston_Alberta_Canada_Temple.jpg" alt="Cardston Alberta Temple">
+                <figcaption>Cardston Alberta Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/RomeTempleatSunset.jpg" alt="Rome Italy Temple">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/New_Nauvoo_Temple_cropped.JPG" alt="Nauvoo Illinois Temple">
+                <figcaption>Nauvoo Illinois Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Mexico_city_temple_night.jpg" alt="Mexico City Mexico Temple">
+                <figcaption>Mexico City Mexico Temple</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/St._George_Utah_Temple_2023-10-02.jpg" alt="St. George Utah Temple">
+                <figcaption>St. George Utah Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy;<span id="currentyear"></span> Sebastián Iturralde | Quito, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/temples.js"></script>
+    <script src="scripts/getdates.js"></script>
+
+</body>
+</html>
