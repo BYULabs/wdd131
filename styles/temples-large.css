@@ -10,7 +10,7 @@
         position: relative;
     }
 
-    header h1 {
+    header p {
         font-size: 2.5rem;
         margin-bottom: 0;
     }
@@ -52,7 +52,7 @@
         padding: 0 2rem;
     }
 
-    main h2 {
+    main h1 {
         font-size: 3rem;
     }
 

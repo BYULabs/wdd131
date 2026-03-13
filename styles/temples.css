@@ -203,11 +203,11 @@ footer p:first-child {
 
 /* ============ RESPONSIVE UTILITIES ============ */
 @media (max-width: 767px) {
-    header h1 {
+    header p {
         font-size: 1.75rem;
     }
 
-    main h2 {
+    main h1 {
         font-size: 2rem;
     }
 
