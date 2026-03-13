@@ -13,7 +13,7 @@ body {
 
 /* ============ HEADER ============ */
 header {
-    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+    background: #2d3748;
     color: white;
     padding: 1.5rem 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@ nav a:hover {
 
 /* ============ MOBILE NAV MENU ============ */
 nav {
-	background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+	background: #2d3748;
 }
 
 .navigation {
