@@ -84,7 +84,7 @@ nav a:hover {
 
 /* ============ MOBILE NAV MENU ============ */
 nav {
-	background-color: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+	background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
 }
 
 .navigation {
