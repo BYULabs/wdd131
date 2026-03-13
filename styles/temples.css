@@ -116,10 +116,6 @@ nav {
 	display: block;
 }
 
-.active::before {
-	content: "📍";
-}
-
 /* ============ MAIN CONTENT ============ */
 main {
     max-width: 950px;
