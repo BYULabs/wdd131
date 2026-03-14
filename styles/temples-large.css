@@ -87,11 +87,11 @@
 
 /* ============ ULTRA LARGE SCREEN STYLES (1400px and up) ============ */
 @media (min-width: 1400px) {
-    header h1 {
+    header p {
         font-size: 2.8rem;
     }
 
-    main h2 {
+    main h1 {
         font-size: 3.5rem;
     }
 

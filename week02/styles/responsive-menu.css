@@ -70,10 +70,6 @@ nav {
 	display: block;
 }
 
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
-
 .stuff {
 	margin: 0.5rem;
 	border: 1px solid rgb(0  0  0 / 0.1);
