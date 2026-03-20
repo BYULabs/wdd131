@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Ecuador, a vibrant South American country known for its biodiversity and rich culture.">
+    <meta name="author" content="Sebastián Iturralde">
+    <title>Ecuador</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Ecuador</h1>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/place-large.webp">
+                <source media="(min-width: 500px)" srcset="images/place-medium.webp">
+                <img src="images/place-small.webp" alt="Image of Cuicocha Lake in Ecuador" width="400" height="300" fetchpriority="high">
+            </picture>
+        </div>
+
+        <section class="info-section data-section">
+            <h2 class="section-title">Data</h2>
+            <div class="grid-body">
+                <strong>Area:</strong> <span>283,561 sq km</span>
+                <strong>Population:</strong> <span>18,397,934</span>
+                <strong>Capital:</strong> <span>Quito</span>
+                <strong>Languages:</strong> <span>Spanish, Kichwa</span>
+                <strong>Currency:</strong> <span>US Dollar</span>
+                <strong>Time Zone:</strong> <span>UTC-5</span>
+                <strong>Calling Code:</strong> <span>+593</span>
+                <strong>Internet TLD:</strong> <span>.ec</span>
+            </div>
+        </section>
+
+        <section class="info-section weather-section">
+            <h2 class="section-title">Weather</h2>
+            <div class="grid-body">
+                <strong>Temperature:</strong> <span>22 °C</span>
+                <strong>Conditions:</strong> <span>Sunny</span>
+                <strong>Wind:</strong> <span>8 km/h</span>
+                <strong>Wind Chill:</strong> <span id="windChill">20.5 °C</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy;<span id="currentyear"></span> Sebastián Iturralde | Quito, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
