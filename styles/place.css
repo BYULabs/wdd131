@@ -2,9 +2,12 @@
     --primary-color: #003f87;
     --accent-color: #DAA520;
     --light-bg: #f5f5f5;
-    --text-dark: #333;
-    --text-light: #444;
-    --white: white;
+    --text-dark: #333333;
+    --text-light: #444444;
+    --white: #ffffff;
+    --black: #000000;
+    --bg-overlay: rgba(255, 255, 255, 0.85);
+    --shadow-dark: rgba(0, 0, 0, 0.3);
 }
 
 * {
@@ -56,7 +59,7 @@ body {
 
 .grid-body strong {
     text-align: right;
-    color: #000;
+    color: var(--black);
 }
 
 .grid-body span {
@@ -100,11 +103,11 @@ body {
 
     .info-section {
         position: absolute;
-        background: rgba(255, 255, 255, 0.85);
+        background: var(--bg-overlay);
         backdrop-filter: blur(8px);
         padding: 50px 20px 20px;
         text-align: left;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        box-shadow: 0 10px 30px var(--shadow-dark);
     }
 
     .section-title {
