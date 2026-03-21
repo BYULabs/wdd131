@@ -23,26 +23,68 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 #course-title {
-    padding: 1rem;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
+    flex: 1;
+}
+
+/* HAMBURGER BUTTON - MOBILE FIRST */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
 }
 
 /* NAVIGATION - MOBILE FIRST */
-.parent .nav {
+.parent .navigation {
     background-color: #3a3a3a;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
     padding: 0;
 }
 
-.parent .nav a {
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.navigation.open {
+    max-height: 500px;
+}
+
+.navigation li {
+    display: flex;
+}
+
+.navigation a {
     color: white;
     text-decoration: none;
     font-size: 0.95rem;
@@ -55,11 +97,11 @@ body {
     border-bottom: 1px solid #2c5282;
 }
 
-.parent .nav a:last-child {
+.navigation li:last-child a {
     border-bottom: none;
 }
 
-.parent .nav a:hover {
+.navigation a:hover {
     background-color: #2c5282;
 }
 
@@ -217,23 +259,40 @@ main {
    TABLET & MEDIUM SCREENS (768px+)
    ==================================== */
 @media (min-width: 768px) {
-    #course-title {
+    .header-top {
         padding: 1.5rem;
+    }
+
+    #course-title {
         font-size: 1.5rem;
     }
 
-    .parent .nav {
-        flex-direction: row;
+    #menu {
+        display: none;
     }
 
-    .parent .nav a {
-        font-size: 1rem;
-        padding: 1rem;
+    .parent .nav {
+        background-color: transparent;
+    }
+
+    .navigation {
+        flex-direction: row;
+        max-height: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
         border-bottom: none;
         border-right: 1px solid #2c5282;
+        font-size: 1rem;
+        padding: 1rem;
     }
 
-    .parent .nav a:last-child {
+    .navigation li:last-child a {
         border-right: none;
     }
 
