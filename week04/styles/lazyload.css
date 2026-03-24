@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-bottom: 2rem;
+    animation: fadeFromBlack 1s ease-in-out;
+}
+
+@keyframes fadeFromBlack {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.main-footer p {
+    margin-bottom: 0.5rem;
+}
+
+.main-footer p:last-child {
+    margin-bottom: 0;
+}
