@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album - Sebastián Iturralde</title>
+    <meta name="description" content="Explore a beautiful gallery of temple photographs from around the world, including iconic temples in Utah, California, Hawaii, and more.">
+    <meta name="author" content="Sebastián Iturralde">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <p>Filtered Temple Album</p>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="gallery" id="gallery">
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy;<span id="currentyear"></span> Sebastián Iturralde | Quito, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
