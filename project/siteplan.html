@@ -192,7 +192,7 @@
             <div class="typography-grid">
                 <article class="typography-card">
                     <h3>Primary Font: Segoe UI</h3>
-                    <p class="font-sample" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">The quick brown fox jumps over the lazy dog</p>
+                    <p class="font-sample font-segoe-sample">The quick brown fox jumps over the lazy dog</p>
                     <p class="font-details"><strong>Classification:</strong> Sans-serif</p>
                     <p class="font-details"><strong>Usage:</strong> Body text, paragraphs, general content, and descriptive text</p>
                     <p class="font-details"><strong>Why This Font:</strong> Segoe UI is designed for screen readability. It's clean, modern, and comes pre-installed on Windows systems. It provides excellent legibility at various sizes, especially on mobile devices.</p>
@@ -200,7 +200,7 @@
 
                 <article class="typography-card">
                     <h3>Heading Font: Georgia</h3>
-                    <p class="font-sample" style="font-family: Georgia, serif;">The quick brown fox jumps over the lazy dog</p>
+                    <p class="font-sample font-georgia-sample">The quick brown fox jumps over the lazy dog</p>
                     <p class="font-details"><strong>Classification:</strong> Serif</p>
                     <p class="font-details"><strong>Usage:</strong> Page titles (h1, h2), major section headings, and emphasis text</p>
                     <p class="font-details"><strong>Why This Font:</strong> Georgia provides elegance and sophistication while maintaining exceptional screen readability. The serif style adds visual weight and hierarchy, helping headings stand out from body text.</p>
@@ -208,7 +208,7 @@
 
                 <article class="typography-card">
                     <h3>Accent Font: Monospace</h3>
-                    <p class="font-sample" style="font-family: 'Courier New', monospace;">Hex #003366 | Code Examples</p>
+                    <p class="font-sample font-mono-sample">Hex #003366 | Code Examples</p>
                     <p class="font-details"><strong>Classification:</strong> Monospace</p>
                     <p class="font-details"><strong>Usage:</strong> Code snippets, hex color codes, technical references, and special numeric content</p>
                     <p class="font-details"><strong>Why This Font:</strong> Monospace fonts preserve character width and are ideal for technical information. They create visual distinction for codes and special content.</p>
@@ -218,10 +218,10 @@
             <article class="typography-hierarchy">
                 <h3>Type Hierarchy & Application</h3>
                 <div class="hierarchy-example">
-                    <h1 style="font-family: Georgia, serif; font-size: 2.4rem; margin: 0.5rem 0;">H1 - Page Main Title (36px)</h1>
-                    <h2 style="font-family: Georgia, serif; font-size: 1.8rem; margin: 0.5rem 0;">H2 - Section Headings (28px)</h2>
-                    <h3 style="font-family: Georgia, serif; font-size: 1.3rem; margin: 0.5rem 0;">H3 - Subsection Headings (20px)</h3>
-                    <p style="font-family: 'Segoe UI', sans-serif; font-size: 1rem; margin: 0.5rem 0;">Body Text - Regular paragraphs (16px) for easy reading on all screens</p>
+                    <h1 class="hierarchy-h1">H1 - Page Main Title (36px)</h1>
+                    <h2 class="hierarchy-h2">H2 - Section Headings (28px)</h2>
+                    <h3 class="hierarchy-h3">H3 - Subsection Headings (20px)</h3>
+                    <p class="hierarchy-body">Body Text - Regular paragraphs (16px) for easy reading on all screens</p>
                 </div>
             </article>
         </section>
@@ -236,27 +236,27 @@
                 <h3>Mobile View (320px - 480px)</h3>
                 <div class="wireframe mobile-wireframe">
                     <div class="wf-header">
-                        <span style="font-weight: bold;">HEADER</span><br>
-                        <span style="font-size: 0.8rem;">Logo + Title</span>
+                        <span class="wf-label-bold">HEADER</span><br>
+                        <span class="wf-label-small">Logo + Title</span>
                     </div>
                     <div class="wf-nav">
-                        <span style="font-weight: bold;">NAV</span><br>
-                        <span style="font-size: 0.8rem;">Menu</span>
+                        <span class="wf-label-bold">NAV</span><br>
+                        <span class="wf-label-small">Menu</span>
                     </div>
                     <div class="wf-main">
                         <div class="wf-card">
-                            <span style="font-weight: bold;">CARD</span><br>
-                            <span style="font-size: 0.8rem;">Phrase</span><br>
-                            <span style="font-size: 0.8rem;">Translation</span><br>
-                            <span style="font-size: 0.8rem;">Example</span>
+                            <span class="wf-label-bold">CARD</span><br>
+                            <span class="wf-label-small">Phrase</span><br>
+                            <span class="wf-label-small">Translation</span><br>
+                            <span class="wf-label-small">Example</span>
                         </div>
                         <div class="wf-buttons">
-                            <span style="font-weight: bold;">BTN</span><br>
-                            <span style="font-weight: bold;">BTN</span>
+                            <span class="wf-label-bold">BTN</span><br>
+                            <span class="wf-label-bold">BTN</span>
                         </div>
                     </div>
                     <div class="wf-footer">
-                        <span style="font-weight: bold;">FOOTER</span>
+                        <span class="wf-label-bold">FOOTER</span>
                     </div>
                 </div>
 
@@ -274,29 +274,29 @@
                 <h3>Desktop View (768px and above)</h3>
                 <div class="wireframe desktop-wireframe">
                     <div class="wf-header-desktop">
-                        <span style="font-weight: bold;">HEADER - Logo + Title + Subtitle</span>
+                        <span class="wf-label-bold">HEADER - Logo + Title + Subtitle</span>
                     </div>
                     <div class="wf-desktop-content">
                         <div class="wf-nav-desktop">
-                            <span style="font-weight: bold;">NAV</span><br>
-                            <span style="font-size: 0.8rem;">Links</span><br>
-                            <span style="font-size: 0.8rem;">Links</span>
+                            <span class="wf-label-bold">NAV</span><br>
+                            <span class="wf-label-small">Links</span><br>
+                            <span class="wf-label-small">Links</span>
                         </div>
                         <div class="wf-main-desktop">
                             <div class="wf-card-desktop">
-                                <span style="font-weight: bold;">CARD</span><br>
-                                <span style="font-size: 0.8rem;">Phrase (Large)</span><br>
-                                <span style="font-size: 0.8rem;">Translation</span><br>
-                                <span style="font-size: 0.8rem;">Example</span>
+                                <span class="wf-label-bold">CARD</span><br>
+                                <span class="wf-label-small">Phrase (Large)</span><br>
+                                <span class="wf-label-small">Translation</span><br>
+                                <span class="wf-label-small">Example</span>
                             </div>
                             <div class="wf-buttons-desktop">
-                                <span style="font-weight: bold;">BTN</span>
-                                <span style="font-weight: bold;">BTN</span>
+                                <span class="wf-label-bold">BTN</span>
+                                <span class="wf-label-bold">BTN</span>
                             </div>
                         </div>
                     </div>
                     <div class="wf-footer-desktop">
-                        <span style="font-weight: bold;">FOOTER</span>
+                        <span class="wf-label-bold">FOOTER</span>
                     </div>
                 </div>
 

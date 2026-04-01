@@ -197,11 +197,50 @@ li {
     padding: 0.7rem;
 }
 
+.font-segoe-sample {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.font-georgia-sample {
+    font-family: Georgia, serif;
+}
+
+.font-mono-sample {
+    font-family: "Courier New", monospace;
+}
+
 .hierarchy-example {
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #fff;
     padding: 1rem;
+}
+
+.hierarchy-h1,
+.hierarchy-h2,
+.hierarchy-h3,
+.hierarchy-body {
+    margin: 0.5rem 0;
+}
+
+.hierarchy-h1 {
+    font-family: Georgia, serif;
+    font-size: 2.4rem;
+}
+
+.hierarchy-h2 {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+}
+
+.hierarchy-h3 {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+}
+
+.hierarchy-body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
 }
 
 .wireframes-container {
@@ -242,6 +281,14 @@ li {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+}
+
+.wf-label-bold {
+    font-weight: bold;
+}
+
+.wf-label-small {
+    font-size: 0.8rem;
 }
 
 footer {
