@@ -333,15 +333,13 @@ footer {
 
     .wf-desktop-content {
         display: flex;
+        flex-direction: column;
         gap: 0.7rem;
     }
 
-    .wf-nav-desktop {
-        flex: 1;
-    }
-
+    .wf-nav-desktop,
     .wf-main-desktop {
-        flex: 2;
+        width: 100%;
     }
 
     .wf-buttons-desktop {
