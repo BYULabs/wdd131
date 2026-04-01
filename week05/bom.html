@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Book of Mormon Example</title>
+    <meta name="description" content="Book of Mormon learning activity example page.">
+    <meta name="author" content="Sebastián Iturralde">
+    <link rel="stylesheet" href="styles/bom.css">
+</head>
+
+<body>
+    <h1>📖 Book of Mormon - Top 10</h1>
+    <main>
+        <div class="input-group">
+            <label for="favchap">Enter Book and Chapter: </label>
+            <input
+                type="text"
+                id="favchap"
+                placeholder="Alma 5"
+                aria-label="Enter Book of Mormon book and chapter"
+                aria-describedby="input-message chapter-count">
+            <button type="submit" aria-label="Add chapter to list">Add Chapter</button>
+        </div>
+        <div id="input-message" class="message-area" role="alert" aria-live="polite"></div>
+        <div class="counter-area">
+            <p id="chapter-count" aria-live="polite">Chapters added: <span id="count-display">0</span>/10</p>
+        </div>
+        <ul id="list" aria-label="Favorite chapters list"></ul>
+    </main>
+    <script src="scripts/bom.js"></script>
+</body>
+</html>
