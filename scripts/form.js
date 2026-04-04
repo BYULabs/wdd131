@@ -26,6 +26,18 @@ const products = [
   }
 ];
 
+const REVIEW_COUNT_KEY = "ReviewCount";
+
+function getStoredReviewCount() {
+  const storedValue = Number.parseInt(localStorage.getItem(REVIEW_COUNT_KEY), 10);
+  return Number.isNaN(storedValue) ? 0 : storedValue;
+}
+
+function incrementReviewCount() {
+  const nextCount = getStoredReviewCount() + 1;
+  localStorage.setItem(REVIEW_COUNT_KEY, String(nextCount));
+}
+
 function toTitleCase(text) {
   return text
     .split(" ")
@@ -42,4 +54,16 @@ if (productSelect) {
     option.textContent = toTitleCase(product.name);
     productSelect.appendChild(option);
   });
+}
+
+const reviewForm = document.querySelector(".review-form");
+
+if (reviewForm) {
+  reviewForm.addEventListener("submit", incrementReviewCount);
+}
+
+const reviewCountDisplay = document.querySelector("#reviewCount");
+
+if (reviewCountDisplay) {
+  reviewCountDisplay.textContent = String(getStoredReviewCount());
 }
