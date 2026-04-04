@@ -1,0 +1,191 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Inter", "Segoe UI", sans-serif;
+	font-size: 16px;
+	background-color: #f8f9fa;
+	color: #333;
+}
+
+.header,
+.footer {
+	background-color: #2c5282;
+	color: #fff;
+	text-align: center;
+}
+
+.header {
+	padding: 1.5rem 1rem;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+main {
+	max-width: 720px;
+	margin: 1rem auto;
+	padding: 0 1rem;
+}
+
+.review-form {
+	background-color: #fff;
+	border: 2px solid #2c5282;
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+
+.field-group {
+	margin-bottom: 1.4rem;
+}
+
+.field-group label,
+.field-group > div:first-of-type {
+	display: block;
+	font-size: 1.15rem;
+	font-weight: 700;
+	margin-bottom: 0.6rem;
+}
+
+.optional {
+	color: #2c5282;
+	font-size: 0.9em;
+	font-weight: 600:
+}
+
+select,
+input[type="text"],
+input[type="date"],
+textarea,
+input[type="submit"] {
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	background-color: #f8f9fa;
+	font-size: 1rem;
+	font-family: inherit;
+}
+
+select, 
+input[type="text"],
+input[type="date"] {
+	min-height: 3rem;
+	padding: 0.55rem 0.9rem;
+}
+
+textarea {
+	min-height: 9rem;
+	padding: 0.75rem 0.9rem;
+	resize: vertical;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+	gap: 0.2rem;
+}
+
+.stars > label {
+	color: #ffb81c;
+	width: 3.5rem;
+	height: 3.5rem;
+	font-size: 3.5rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #003366;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+.features-group label {
+	display: flex;
+	align-items: center;
+	gap: 0.7rem;
+	margin-bottom: 0.45rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+input[type="checkbox"] {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0;
+}
+
+input[type="submit"] {
+	min-height: 3.2rem;
+	font-size: 1.15rem;
+	font-weight: 700;
+	background-color: #2c5282;
+	color: #fff;
+	border: 1px solid #2c5282;
+	border-radius: 0.35rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #003366;
+	border-color: #003366;
+}
+
+.footer {
+	padding: 1.5rem 1rem;
+	font-size: 1rem;
+	line-height: 1.35;
+}
+
+.footer p {
+	margin: 0.2rem 0
+}
+
+@media (min-width: 781px) {
+	main{
+		margin: 1.35rem auto;
+	}
+
+	.review-form {
+		padding: 1.5rem;
+	}
+
+	select,
+	input[type="text"],
+	input[type="date"] {
+		min-height: 3.25rem;
+	}
+
+	textarea {
+		min-height: 10rem;
+	}
+
+	input[type="checkbox"] {
+		width: 1.35rem;
+		height: 1.35rem;
+	}
+
+	input[type="submit"] {
+		min-height: 3.4rem;
+	}
+}

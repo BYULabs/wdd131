@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form for product reviews">
+    <meta name="author" content="Sebastián Iturralde">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form class="review-form" method="get" action="review.html">
+            <div class="field-group">
+                <label for="productName">Product Name</label>
+                <select name="productName" id="productName" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+            
+            <div class="field-group">
+                <div>Overall Rating</div>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <div class="field-group features-group">
+                <div>Which features did you find useful in the product?<br><em>(Check all that apply)</em></div>
+                <label><input type="checkbox" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" value="ease-of-use">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" value="design">Design</label>
+            </div>
+            
+            <div class="field-group">
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea name="review" id="revoew" rows="7"></textarea>
+            </div>
+            
+            <div class="field-group">
+                <label for="username">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" name="username" id="username">
+            </div>
+            
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer class="footer">
+        <p>&copy;<span id="currentyear"></span> Sebastián Iturralde | Quito, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
