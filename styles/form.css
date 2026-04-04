@@ -55,7 +55,7 @@ main {
 .optional {
 	color: #2c5282;
 	font-size: 0.9em;
-	font-weight: 600:
+	font-weight: 600;
 }
 
 select,
