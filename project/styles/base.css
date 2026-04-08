@@ -98,6 +98,36 @@ body {
     transition: max-height 0.3s ease;
 }
 
+.navigation.open {
+    max-height: 500px;
+}
+
+.navigation li {
+    display: flex;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.8rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid var(--primary);
+}
+
+.navigation li:last-child a {
+    border-bottom: none;
+}
+
+.navigation a:hover,
+.navigation a[aria-current="page"] {
+    background-color: var(--primary);
+}
+
 .parent .footer {
     background-color: var(--primary);
     color: white;
