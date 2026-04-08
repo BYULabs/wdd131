@@ -141,3 +141,55 @@ body {
 .parent .footer p {
     margin: 0.3rem 0;
 }
+
+@media (min-width: 768px) {
+    .header-top {
+        padding: 1.5rem;
+    }
+
+    #course-title {
+        font-size: 1.5rem;
+    }
+
+    .sub-title {
+        font-size: 0.95rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .parent .nav {
+        background-color: transparent;
+    }
+
+    .navigation {
+        flex-direction: row;
+        max-height: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .navigation li {
+        flex: 1;
+    }
+
+    .navigation a {
+        border-bottom: none;
+        border-right: 1px solid var(--primary);
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .navigation li:last-child a {
+        border-right: none;
+    }
+
+    .parent .title {
+        padding: 2rem 1rem;
+    }
+
+    .parent .footer {
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+}
