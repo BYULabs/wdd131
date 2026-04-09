@@ -219,6 +219,39 @@ main li {
     line-height: 1.5;
 }
 
+.form-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: var(--ink-700);
+}
+
+.form-group input {
+    border: 1px solid #c5d7eb;
+    border-radius: 10px;
+    padding: 0.75rem 0.85rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--ink-900);
+    background: white;
+}
+
+.form-group input:focus-visible {
+    outline: 3px solid var(--accent-yellow);
+    outline-offset: 1px;
+    border-color: var(--primary);
+}
+
 .button-group {
     margin-top: 1.25rem;
     display: flex;
