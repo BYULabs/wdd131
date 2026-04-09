@@ -41,5 +41,10 @@ nextBtn.addEventListener('click', () => {
     updatePhrase(currentIndex);
 });
 
+resetBtn.addEventListener('click', () => {
+    currentIndex = 0;
+    updatePhrase(currentIndex);
+})
+
 updatePhrase(currentIndex);
 
