@@ -10,6 +10,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/responsive-menu.js" defer></script>
     <script src="scripts/add-new.js" defer></script>
+
 </head>
 <body>
     <div class="parent">
@@ -23,20 +24,19 @@
             </div>
             <nav class="nav">
                 <ul class="navigation">
-                    <li><a href="../" title="Coruse Home">Course Home</a></li>
+                    <li><a href="../" title="Course Home">Course Home</a></li>
                     <li><a href="index.html" title="Slang Translator">Slang Translator</a></li>
                     <li><a href="about.html" title="About the Project">About the Project</a></li>
                     <li><a href="add-new.html" title="Add Words" aria-current="page">Add Words</a></li>
                 </ul>
             </nav>
         </header>
-
         <main>
             <div class="container">
-                <article class="card">
-                    <dic class="card-header" aria-labelledby="add-slang-title">
+                <article class="card" aria-labelledby="add-slang-title">
+                    <div class="card-header">
                         <span class="phrase-number">Community Contributions</span>
-                    </dic>
+                    </div>
 
                     <h2 id="add-slang-title" class="phrase-word">Add a New Slang Phrase</h2>
                     <p class="phrase-translation">
@@ -48,29 +48,34 @@
                     <form id="addSlangForm" class="form-stack">
                         <div class="form-group">
                             <label for="word">Slang Word or Expression</label>
-                            <input type="text" id="word" name="word" required maxlength="60" placeholder="Example: Bacán">
+                            <input id="word" name="word" type="text" required maxlength="60" placeholder="Example: Bacán">
                         </div>
-    
+
                         <div class="form-group">
-                            <label for="tanslation">English Translation</label>
-                            <input type="text" id="translation" name="translation" required maxlength="120" placeholder="Example: Cool / Awesome">
+                            <label for="translation">English Translation</label>
+                            <input id="translation" name="translation" type="text" required maxlength="120" placeholder="Example: Cool / Awesome">
                         </div>
-    
+
+                        <div class="form-group">
+                            <label for="example">Example Sentence</label>
+                            <textarea id="example" name="example" required maxlength="220" rows="4" placeholder="Example: Ese plan está bacán."></textarea>
+                        </div>
+
                         <div class="button-group">
                             <button type="submit" class="btn-primary">Save Phrase</button>
-                            <button type="submit" id="clearCustomBtn" class="btn-secondary">Clear My Saved Phrases</button>
+                            <button type="button" id="clearCustomBtn" class="btn-secondary">Clear My Saved Phrases</button>
                         </div>
                     </form>
 
-
+                    <p id="formMessage" class="form-message" aria-live="polite"></p>
                 </article>
             </div>
         </main>
         <footer class="footer">
-            <p><span id="currentyear"></span> Sebastián Iturralde | Quito, Ecuador</p>
+            <p>&copy;<span id="currentyear"></span> Sebastián Iturralde | Quito, Ecuador</p>
             <p id="lastModified"></p>
         </footer>
     </div>
-    
+
 </body>
 </html>
